@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Nasa plava boja. Koristis je kao: text-plava, bg-plava */
+@theme {
+  --color-plava: #4da3ff;
+}
+
+body {
+  background: #050505;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-plava: #4da3ff;
+
+  /* Animacija za traku sa uslugama (koristis kao: animate-traka) */
+  --animate-traka: traka 30s linear infinite;
+  @keyframes traka {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
